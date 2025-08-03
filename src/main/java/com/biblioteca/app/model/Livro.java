@@ -1,20 +1,21 @@
 package com.biblioteca.app.model;
 
-
 import lombok.*;
 
-@Data
 //@Entity
 //@Table(name = "Livro")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Livro {
 
    // @Id
     //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String inns;
+    private String issn;
     private String titulo;
     private String sinopse;
     private Integer ano;
-    private Integer pagina;
+    private Integer numeroDePaginas;
 
 }
